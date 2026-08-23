@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RetroDrive サポート">
+  <title>Support | RetroDrive</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body><main class="document">
+  <a class="back" href="../">← RetroDrive</a>
+  <h1>Support</h1>
+  <p class="updated">ヘルプ・お問い合わせ / Help &amp; Contact</p>
+  <article>
+    <h2>よくある質問</h2>
+    <h3>ゲームを開始するには？</h3>
+    <p>STARTボタンでエンジンをかけ、ギアとハンドルを操作してください。</p>
+    <h3>ライフが0になった場合は？</h3>
+    <p>リワード広告を最後まで視聴すると、3ライフで再開できます。広告の準備中はボタンが一時的に押せません。</p>
+    <h3>音が聞こえない場合は？</h3>
+    <p>端末の音量、消音モード、およびアプリ内のサウンド設定をご確認ください。</p>
+    <h3>記録をリセットしたい場合は？</h3>
+    <p>現在のバージョンでは、アプリを削除して再インストールすると端末内の記録が初期化されます。</p>
+    <h2>不具合・ご意見</h2>
+    <p>次のボタンから、使用端末、OSバージョン、発生した操作を添えてお知らせください。</p>
+    <a id="issue-link" class="contact-button" href="#">サポートへ連絡</a>
+    <p id="local-note" hidden>公開後、このボタンからGitHub Issuesへ連絡できます。</p>
+    <hr>
+    <h2>English</h2>
+    <p>For help, bug reports, or feedback, use the contact button above. Please include your device model, iOS version, and steps that reproduce the issue. Do not include sensitive or personal information.</p>
+  </article>
+</main>
+<script>
+  const link = document.querySelector('#issue-link');
+  if (location.hostname.endsWith('.github.io')) {
+    const owner = location.hostname.split('.')[0];
+    link.href = `https://github.com/${owner}/${location.hostname}/issues/new?template=bug_report.yml`;
+  } else {
+    link.hidden = true;
+    document.querySelector('#local-note').hidden = false;
+  }
+</script>
+</body>
+</html>
