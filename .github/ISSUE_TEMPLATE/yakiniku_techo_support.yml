@@ -1,0 +1,39 @@
+name: 焼肉手帳 サポート
+description: 焼肉手帳の不具合、ご意見、お問い合わせ
+title: "[焼肉手帳] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "個人情報や機密情報は記載しないでください。Do not include personal or sensitive information."
+  - type: dropdown
+    id: category
+    attributes:
+      label: 種別 / Category
+      options:
+        - 不具合 / Bug
+        - 購入・復元 / Purchase or restore
+        - ご意見・ご要望 / Feedback
+        - その他 / Other
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: 端末 / Device
+      placeholder: iPhone または iPad のモデル
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: iOSバージョン / iOS version
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 内容 / Details
+      description: 不具合の場合は、発生した操作と実際の結果をお知らせください。
+    validations:
+      required: true
