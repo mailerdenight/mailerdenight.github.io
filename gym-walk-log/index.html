@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple multilingual treadmill workout tracker for walking and running.">
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body data-page="home">
+  <div class="shell">
+    <nav class="nav">
+      <a class="brand" href="./" data-localized-link><span class="brand-mark" aria-hidden="true">🚶</span><span data-i18n="appName">Gym Walk &amp; Run Log</span></a>
+      <div class="nav-links">
+        <a href="./support/" data-localized-link data-i18n="supportNav">Support</a>
+        <a href="./privacy/" data-localized-link data-i18n="privacyNav">Privacy</a>
+        <select id="language-selector"></select>
+      </div>
+    </nav>
+    <header class="hero hero-single">
+      <div>
+        <span class="eyebrow" data-i18n="appName">Gym Walk &amp; Run Log</span>
+        <h1 data-i18n="heroTitle">Every walk and run adds up.</h1>
+        <p class="lead" data-i18n="promo">Log treadmill workouts and see your progress.</p>
+        <div class="cta-row">
+          <a class="button button-primary" href="https://apps.apple.com/app/id6776317612" data-i18n="appStore">View on the App Store</a>
+          <a class="button button-secondary" href="./support/" data-localized-link data-i18n="supportNav">Support</a>
+        </div>
+      </div>
+    </header>
+    <section class="section stack">
+      <h2 data-i18n="featuresTitle">Key features</h2>
+      <div class="section-grid">
+        <article class="section-card"><h3 data-i18n="quickTitle">Quick entry</h3><p data-i18n="quickText"></p></article>
+        <article class="section-card"><h3 data-i18n="photoTitle">Enter from a photo</h3><p data-i18n="photoText"></p></article>
+        <article class="section-card"><h3 data-i18n="progressTitle">See your progress</h3><p data-i18n="progressText"></p></article>
+      </div>
+    </section>
+    <section class="section"><article class="info-card prose" data-i18n="description"></article></section>
+    <footer class="footer" data-i18n="appName">Gym Walk &amp; Run Log</footer>
+  </div>
+  <script src="./localization.js"></script>
+</body>
+</html>
