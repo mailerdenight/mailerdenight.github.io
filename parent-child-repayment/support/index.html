@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>サポート｜親子の返済ノート</title>
+  <link rel="canonical" href="https://mailerdenight.github.io/parent-child-repayment/support/">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body><main>
+  <header><a href="../">親子の返済ノート</a><nav><a href="../privacy/">プライバシー</a></nav></header>
+  <h1>サポート</h1>
+  <div class="card">
+    <h2>共有できない場合</h2>
+    <p>親子双方のiPhoneでiCloudへのサインインと通信状態を確認してください。共有を受けた側は、招待された子どもの記録を閲覧できます。</p>
+    <h2>通知が届かない場合</h2>
+    <p>iPhoneの設定で本アプリの通知を許可し、記録の返済予定日や曜日を確認してください。通知は予定のお知らせで、返済の記録は行いません。</p>
+    <h2>お問い合わせ</h2>
+    <p>不具合、共有やデータ削除に関する相談は、下のサポートフォームからお送りください。GitHubへのサインインが必要です。公開される投稿に実際の名前や金額などの個人情報を記載しないでください。</p>
+    <a id="contact" class="button" href="#">サポートフォームを開く</a>
+  </div>
+  <p lang="en">For support, bug reports, or data deletion guidance, use the contact form above. A GitHub sign-in is required. Do not include private names or amounts in a public issue.</p>
+  <footer><a href="../">ホーム</a><a href="../privacy/">プライバシーポリシー</a></footer>
+</main>
+<script>
+  const account = location.hostname.split(".")[0];
+  document.getElementById("contact").href = `https://github.com/${account}/${location.hostname}/issues/new`;
+</script>
+</body></html>
