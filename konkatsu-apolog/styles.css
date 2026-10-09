@@ -1,0 +1,146 @@
+:root {
+  color-scheme: light;
+  --accent: #4b5563;
+  --accent-dark: #1f2937;
+  --bg: #f3f4f6;
+  --panel: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --line: #d1d5db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+  background: linear-gradient(180deg, #fff 0%, var(--bg) 42%, #f9fafb 100%);
+  color: var(--text);
+  line-height: 1.8;
+}
+
+a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.page {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 64px;
+}
+
+.hero {
+  padding: 52px 32px;
+  border-radius: 28px;
+  background: var(--accent);
+  color: white;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 7vw, 4rem);
+  line-height: 1.15;
+}
+
+.lead {
+  max-width: 680px;
+  margin: 18px 0 0;
+  font-size: 1.18rem;
+  font-weight: 700;
+  opacity: 0.92;
+}
+
+.section {
+  margin-top: 24px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--panel);
+  box-shadow: 0 18px 40px rgba(17, 24, 39, 0.07);
+}
+
+h2 {
+  margin: 0 0 12px;
+  color: var(--accent-dark);
+  font-size: 1.45rem;
+  line-height: 1.35;
+}
+
+h3 {
+  margin: 0 0 4px;
+  color: var(--accent-dark);
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+ul {
+  margin: 8px 0 0;
+  padding-left: 1.4rem;
+}
+
+.contact {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #eef0f3;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.features > div {
+  padding: 18px;
+  border-radius: 18px;
+  background: #f8fafc;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+}
+
+.policy h2 {
+  margin-top: 26px;
+}
+
+.back {
+  margin: 24px 0 0;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .page {
+    padding-top: 24px;
+  }
+
+  .hero,
+  .section {
+    padding: 24px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
