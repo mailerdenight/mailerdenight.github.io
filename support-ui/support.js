@@ -32,13 +32,15 @@
   if (!text) return;
   active = code;
   document.documentElement.lang = code;
-  document.title = text.supportTitle + " | " + text.appName;
-  document.querySelector('meta[name="description"]').content = text.appName + " — " + text.supportIntro;
+  const isPrivacy = config.pageType === "privacy";
+  document.title = (isPrivacy ? text.privacyTitle : text.supportTitle) + " | " + text.appName;
+  document.querySelector('meta[name="description"]').content = text.appName + " — " + (isPrivacy ? text.privacyIntro : text.supportIntro);
   document.querySelectorAll("[data-support-text]").forEach(element => {
    const value = text[element.dataset.supportText];
    if (typeof value === "string") element.textContent = value;
   });
   const faqList = document.querySelector("[data-support-faqs]");
+  if (faqList) {
   faqList.replaceChildren();
   for (const faq of text.faqs || []) {
    const article = document.createElement("article");
@@ -50,16 +52,20 @@
    article.append(heading, answer);
    faqList.append(article);
   }
+  }
   document.querySelectorAll("[data-support-link]").forEach(link => {
-   const path = link.dataset.supportLink === "privacy" ? "/" + config.slug + "/privacy/" : "/" + config.slug + "/";
+   const target = link.dataset.supportLink;
+   const path = "/" + config.slug + "/" + (target === "privacy" || target === "support" ? target + "/" : "");
    const url = new URL(path, location.href);
    url.searchParams.set("lang", code);
    link.href = url.href;
   });
   const email = document.querySelector("[data-support-email]");
+  if (email) {
   const fields = ["appVersion", "device", "osVersion", "issue", "steps"];
   const body = [text.appName, ...fields.map(key => text[key] + ": ")].join("\n\n");
   email.href = "mailto:" + config.email + "?subject=" + encodeURIComponent(text.appName + " / " + text.contactTitle) + "&body=" + encodeURIComponent(body);
+  }
   document.querySelector("[data-support-nav]").setAttribute("aria-label", text.navLabel);
   selector.value = code;
   selector.setAttribute("aria-label", text.language);
