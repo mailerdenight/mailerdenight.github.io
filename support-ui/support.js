@@ -33,8 +33,9 @@
   active = code;
   document.documentElement.lang = code;
   const isPrivacy = config.pageType === "privacy";
-  document.title = (isPrivacy ? text.privacyTitle : text.supportTitle) + " | " + text.appName;
-  document.querySelector('meta[name="description"]').content = text.appName + " — " + (isPrivacy ? text.privacyIntro : text.supportIntro);
+  const isHome = config.pageType === "home";
+  document.title = isHome ? text.appName : (isPrivacy ? text.privacyTitle : text.supportTitle) + " | " + text.appName;
+  document.querySelector('meta[name="description"]').content = text.appName + " — " + (isHome ? text.homeIntro : isPrivacy ? text.privacyIntro : text.supportIntro);
   document.querySelectorAll("[data-support-text]").forEach(element => {
    const value = text[element.dataset.supportText];
    if (typeof value === "string") element.textContent = value;

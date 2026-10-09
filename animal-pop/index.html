@@ -1,3 +1,242 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>どうぶつポン！ | Animal Pop!</title><meta name="description" content="奥までつながる、どうぶつ消去パズル。無料で始めて、買い切りで全機能を解放。"><link rel="stylesheet" href="style.css"><link rel="canonical" href="https://mailerdenight.github.io/animal-pop/">
-</head><body>
-<nav aria-label="関連ページ" style="display:flex;flex-wrap:wrap;gap:16px;padding:18px;margin:16px auto;max-width:920px;font-family:sans-serif;font-size:14px"><a href="/">全アプリ</a><a href="/animal-pop/">どうぶつポン！</a><a href="/animal-pop/support/">サポート</a><a href="/animal-pop/privacy/">プライバシー</a></nav><main><nav><strong>Animal Pop!</strong><a href="support/">サポート / Support</a><a href="privacy/">プライバシー / Privacy</a><select id="language" aria-label="Language"><option value="ja">日本語</option><option value="en">English</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="ko">한국어</option><option value="es-419">Español</option><option value="pt-BR">Português</option><option value="th">ไทย</option><option value="vi">Tiếng Việt</option><option value="id">Bahasa Indonesia</option></select></nav><section class="hero"><div><img class="icon" src="assets/icon.png" alt="Animal Pop icon"><h1 id="name">どうぶつポン！</h1><h2 id="subtitle">奥までつながるどうぶつ消去パズル</h2><div class="animals"><img src="assets/dog.png" alt="dog"><img src="assets/cat.png" alt="cat"><img src="assets/pig.png" alt="pig"><img src="assets/lion.png" alt="lion"><img src="assets/chick.png" alt="chick"><img src="assets/cow.png" alt="cow"></div><p>無料ダウンロード · 全機能解放は日本で200円の買い切り<br><span class="muted">Free download · One-time unlock: ¥200 in Japan. Local prices appear in the app.</span></p><a class="button" href="https://apps.apple.com/app/id6813620521">App Storeで見る / View on the App Store</a></div><img id="gameplay" class="phone" src="assets/ja-gameplay.png" alt="Gameplay screenshot"></section><section class="card"><pre id="description"></pre></section><footer>© 2026 Puzzle Studio · <a href="support/">Support</a> · <a href="privacy/">Privacy</a></footer></main><script>let content;const language=document.getElementById('language');async function show(){content=content||await fetch('content.json').then(r=>r.json());const x=content[language.value];document.documentElement.lang=language.value;document.getElementById('name').textContent=x.name;document.getElementById('subtitle').textContent=x.subtitle;document.getElementById('description').textContent=x.description;document.getElementById('gameplay').src='assets/'+language.value+'-gameplay.png'}language.addEventListener('change',show);show();</script></body></html>
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="奥までつながるどうぶつ消去パズル デモで遊ぼう"><title>どうぶつポン！</title><link rel="canonical" href="https://mailerdenight.github.io/animal-pop/"><link rel="stylesheet" href="/support-ui/support.css"><script src="/support-ui/support.js" defer=""></script></head><body><a href="#main" class="skip-link" data-support-text="skipLink">本文へ移動</a><header class="shell nav"><a class="brand" href="./" data-support-link="home"><img class="brand-mark" src="/assets/app-icons/animal-pop.jpg" width="48" height="48" alt=""><span data-support-text="appName">どうぶつポン！</span></a><nav class="nav-links" data-support-nav="" aria-label="ページ内の案内"><a href="/" data-support-text="allApps">全アプリ</a><a href="support/" data-support-link="support" data-support-text="supportNav">サポート</a><a href="privacy/" data-support-link="privacy" data-support-text="privacyNav">プライバシー</a><div class="language-control"><label for="language-selector" data-support-text="language">言語</label><select id="language-selector"><option value="ja" selected="">日本語</option><option value="en">English</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="ko">한국어</option><option value="es-419">Español</option><option value="pt-BR">Português (Brasil)</option><option value="th">ไทย</option><option value="vi">Tiếng Việt</option><option value="id">Bahasa Indonesia</option></select></div></nav></header><main id="main" class="shell" tabindex="-1"><header class="page-title home-hero"><span class="eyebrow" data-support-text="appName">どうぶつポン！</span><h1 data-support-text="heroTitle">奥までつながるどうぶつ消去パズル</h1><p class="lead" data-support-text="homeIntro">奥までつながるどうぶつ消去パズル デモで遊ぼう</p><div class="cta-row"><a class="button button-primary" href="https://apps.apple.com/jp/app/id6813620521" data-support-text="appStore">App Storeで見る</a></div></header><div data-page-locale="ja" lang="ja"><section class="info-card home-details"><div class="home-media"><img class="gameplay" src="/animal-pop/assets/ja-gameplay.png" alt="奥までつながるどうぶつ消去パズル" loading="lazy"></div><p class="home-prose">奥までつながるどうぶつ消去パズル
+
+1回タップで選択。もう1回で消去。
+
+各マスに駒が3枚重なっています。左下に少し見えている色が、奥の駒の色です。手前が消えると、奥の駒が見えます。
+
+同じどうぶつは上下左右と、重なった隣の駒につながります。斜めはつながりません。2匹以上で消せます。背景色も種類ごとに決まっています。
+
+重なりの下が空いたら上の駒が落ちます。画面の下にも詰まり、空列は左へ動きます。まとめて消すほど高得点！
+
+無料で遊べる機能
+3種類 / 4種類
+横3 × 縦4 × 奥3枚 / 横4 × 縦5 × 奥3枚
+デモで遊ぼう · サウンド · BEST SCORE
+
+全機能を解放
+5・6種類の動物
+横5・6の大きな盤面
+ヒント・取り消し
+一度の購入で使えます。月額料金はありません。
+
+最初の盤面には、すべて消せる手順があります。ただし消す順番によっては駒が残ります。
+
+無料版ではゲームオーバー3回ごとの区切りに広告を表示します。全機能解放で広告を表示しません。</p></section></div>
+<div data-page-locale="en" lang="en" hidden=""><section class="info-card home-details"><div class="home-media"><img class="gameplay" src="/animal-pop/assets/en-gameplay.png" alt="Match animals across 3 layers" loading="lazy"></div><p class="home-prose">Match animals across 3 layers
+
+Tap once to select. Tap again to clear.
+
+Each square has 3 stacked animals. The colors peeking out at the lower left belong to the animals behind. Clear the front animal to reveal them.
+
+Matching animals connect up, down, left, right and through adjacent layers, but not diagonally. Clear groups of 2 or more. Each type has its own background color.
+
+Animals fall into empty spaces, move down, and empty columns shift left. Bigger groups earn more points!
+
+Free features
+3 types / 4 types
+3 columns × 4 rows × 3 layers / 4 columns × 5 rows × 3 layers
+Try the demo · Sound · BEST SCORE
+
+Unlock all features
+5 or 6 animal types
+Larger boards with 5 or 6 columns
+Hints and undo
+One-time purchase. No monthly fee.
+
+Every starting board has a solution, but some moves can leave animals behind.
+
+The free version shows an ad at a break after every 3 game overs. Full unlock removes ads.</p></section></div>
+<div data-page-locale="zh-Hans" lang="zh-Hans" hidden=""><section class="info-card home-details"><div class="home-media"><img class="gameplay" src="/animal-pop/assets/zh-Hans-gameplay.png" alt="连接三层动物，轻松消除" loading="lazy"></div><p class="home-prose">连接三层动物，轻松消除
+
+点击一次选中，再次点击消除。
+
+每个格子叠着3只动物。左下方露出的颜色属于后面的动物。消除前面的动物就能看到后面的动物。
+
+相同动物可通过上下左右及相邻层相连，斜向不相连。2只以上即可消除。每种动物有固定的背景色。
+
+出现空位后，动物会下落并向下移动，空列向左移动。一次消除越多，得分越高！
+
+免费功能
+3种 / 4种
+3列 × 4行 × 3层 / 4列 × 5行 × 3层
+体验演示 · 声音 · 最高分
+
+解锁全部功能
+5种或6种动物
+5列或6列的大棋盘
+提示和撤销
+一次购买，无月费。
+
+初始棋盘都有全消除的解法，但消除顺序不同可能会留下动物。
+
+免费版每3次游戏结束后会在间歇显示广告。解锁全部功能可移除广告。</p></section></div>
+<div data-page-locale="zh-Hant" lang="zh-Hant" hidden=""><section class="info-card home-details"><div class="home-media"><img class="gameplay" src="/animal-pop/assets/zh-Hant-gameplay.png" alt="連接三層動物，輕鬆消除" loading="lazy"></div><p class="home-prose">連接三層動物，輕鬆消除
+
+點擊一次選中，再次點擊消除。
+
+每個格子疊著3只動物。左下方露出的顏色屬於後面的動物。消除前面的動物就能看到後面的動物。
+
+相同動物可通過上下左右及相鄰層相連，斜向不相連。2只以上即可消除。每種動物有固定的背景色。
+
+出現空位後，動物會下落並向下移動，空列向左移動。一次消除越多，得分越高！
+
+免費功能
+3種 / 4種
+3列 × 4行 × 3層 / 4列 × 5行 × 3層
+體驗演示 · 聲音 · 最高分
+
+解鎖全部功能
+5種或6種動物
+5列或6列的大棋盤
+提示和撤銷
+一次購買，無月費。
+
+初始棋盤都有全消除的解法，但消除順序不同可能會留下動物。
+
+免費版每3次遊戲結束後會在休息時顯示廣告。解鎖全部功能可移除廣告。</p></section></div>
+<div data-page-locale="ko" lang="ko" hidden=""><section class="info-card home-details"><div class="home-media"><img class="gameplay" src="/animal-pop/assets/ko-gameplay.png" alt="3층으로 이어지는 동물 퍼즐" loading="lazy"></div><p class="home-prose">3층으로 이어지는 동물 퍼즐
+
+한 번 탭하여 선택하고 다시 탭하여 제거하세요.
+
+각 칸에 동물이 3마리 겹쳐 있습니다. 왼쪽 아래에 보이는 색은 뒤 동물의 색입니다. 앞 동물을 제거하면 뒤 동물이 보입니다.
+
+같은 동물은 상하좌우와 인접한 층으로 연결됩니다. 대각선은 연결되지 않습니다. 2마리 이상이면 제거할 수 있습니다. 종류마다 배경색이 다릅니다.
+
+빈자리가 생기면 동물이 아래로 떨어지고 빈 열은 왼쪽으로 이동합니다. 한꺼번에 많이 제거할수록 점수가 높아요!
+
+무료 기능
+3종류 / 4종류
+가로 3 × 세로 4 × 3층 / 가로 4 × 세로 5 × 3층
+데모로 배워요 · 소리 · 최고 점수
+
+모든 기능 잠금 해제
+5·6종류의 동물
+5·6열의 큰 보드
+힌트와 되돌리기
+한 번만 구매하세요. 월 요금은 없습니다.
+
+처음 보드는 모두 제거할 수 있지만 제거 순서에 따라 동물이 남을 수 있습니다.
+
+무료 버전은 게임 오버 3회마다 쉬는 시점에 광고를 표시합니다. 전체 잠금 해제로 광고를 제거하세요.</p></section></div>
+<div data-page-locale="es-419" lang="es-419" hidden=""><section class="info-card home-details"><div class="home-media"><img class="gameplay" src="/animal-pop/assets/es-419-gameplay.png" alt="Une animales en 3 capas" loading="lazy"></div><p class="home-prose">Une animales en 3 capas
+
+Toca una vez para seleccionar y otra para eliminar.
+
+Cada casilla tiene 3 animales apilados. Los colores que asoman abajo a la izquierda son de los animales de atrás. Elimina el del frente para descubrirlos.
+
+Los animales iguales se conectan arriba, abajo, a los lados y entre capas contiguas, pero no en diagonal. Elimina grupos de 2 o más. Cada tipo tiene su propio color de fondo.
+
+Los animales caen en los espacios vacíos, se mueven hacia abajo y las columnas vacías se desplazan a la izquierda. ¡Los grupos grandes dan más puntos!
+
+Funciones gratis
+3 tipos / 4 tipos
+3 columnas × 4 filas × 3 capas / 4 columnas × 5 filas × 3 capas
+Prueba la demo · Sonido · RÉCORD
+
+Desbloquear todo
+5 o 6 tipos de animales
+Tableros grandes de 5 o 6 columnas
+Pistas y deshacer
+Compra única. Sin cuota mensual.
+
+Todos los tableros iniciales tienen solución, pero algunos movimientos pueden dejar animales sin eliminar.
+
+La versión gratuita muestra un anuncio tras cada 3 partidas perdidas. Desbloquear todo elimina los anuncios.</p></section></div>
+<div data-page-locale="pt-BR" lang="pt-BR" hidden=""><section class="info-card home-details"><div class="home-media"><img class="gameplay" src="/animal-pop/assets/pt-BR-gameplay.png" alt="Combine animais em 3 camadas" loading="lazy"></div><p class="home-prose">Combine animais em 3 camadas
+
+Toque uma vez para selecionar e novamente para remover.
+
+Cada casa tem 3 animais empilhados. As cores que aparecem embaixo à esquerda são dos animais de trás. Remova o da frente para revelá-los.
+
+Animais iguais se conectam acima, abaixo, aos lados e entre camadas vizinhas, mas não na diagonal. Remova grupos de 2 ou mais. Cada tipo tem sua cor de fundo.
+
+Os animais caem nos espaços vazios, descem e as colunas vazias vão para a esquerda. Grupos maiores valem mais pontos!
+
+Recursos grátis
+3 tipos / 4 tipos
+3 colunas × 4 linhas × 3 camadas / 4 colunas × 5 linhas × 3 camadas
+Experimente a demo · Som · RECORDE
+
+Desbloquear tudo
+5 ou 6 tipos de animais
+Tabuleiros maiores com 5 ou 6 colunas
+Dicas e desfazer
+Compra única. Sem mensalidade.
+
+Todo tabuleiro inicial tem solução, mas algumas jogadas podem deixar animais para trás.
+
+A versão gratuita mostra um anúncio após cada 3 fins de jogo. O desbloqueio completo remove os anúncios.</p></section></div>
+<div data-page-locale="th" lang="th" hidden=""><section class="info-card home-details"><div class="home-media"><img class="gameplay" src="/animal-pop/assets/th-gameplay.png" alt="จับคู่สัตว์ใน 3 ชั้น" loading="lazy"></div><p class="home-prose">จับคู่สัตว์ใน 3 ชั้น
+
+แตะครั้งแรกเพื่อเลือก แตะอีกครั้งเพื่อลบ
+
+แต่ละช่องมีสัตว์ซ้อนกัน 3 ตัว สีที่โผล่ด้านล่างซ้ายเป็นสีของสัตว์ด้านหลัง ลบสัตว์ด้านหน้าเพื่อให้เห็นด้านหลัง
+
+สัตว์ชนิดเดียวกันเชื่อมกันด้านบน ล่าง ซ้าย ขวา และชั้นที่ติดกัน แต่ไม่เชื่อมแนวทแยง ลบกลุ่มตั้งแต่ 2 ตัวขึ้นไปได้ แต่ละชนิดมีสีพื้นหลังต่างกัน
+
+สัตว์จะตกลงในช่องว่าง เลื่อนลงด้านล่าง และคอลัมน์ว่างจะขยับไปทางซ้าย ยิ่งลบกลุ่มใหญ่ยิ่งได้คะแนนมาก!
+
+ฟีเจอร์ฟรี
+3 ชนิด / 4 ชนิด
+3 คอลัมน์ × 4 แถว × 3 ชั้น / 4 คอลัมน์ × 5 แถว × 3 ชั้น
+ลองเล่นสาธิต · เสียง · คะแนนสูงสุด
+
+ปลดล็อกทุกฟีเจอร์
+สัตว์ 5 หรือ 6 ชนิด
+กระดานใหญ่แบบ 5 หรือ 6 คอลัมน์
+คำใบ้และย้อนกลับ
+ซื้อครั้งเดียว ไม่มีค่ารายเดือน
+
+กระดานเริ่มต้นทุกกระดานมีวิธีลบได้ทั้งหมด แต่ลำดับการลบอาจทำให้สัตว์เหลืออยู่
+
+เวอร์ชันฟรีจะแสดงโฆษณาหลังเกมโอเวอร์ทุก 3 ครั้ง การปลดล็อกทั้งหมดจะลบโฆษณา</p></section></div>
+<div data-page-locale="vi" lang="vi" hidden=""><section class="info-card home-details"><div class="home-media"><img class="gameplay" src="/animal-pop/assets/vi-gameplay.png" alt="Nối động vật qua 3 lớp" loading="lazy"></div><p class="home-prose">Nối động vật qua 3 lớp
+
+Chạm một lần để chọn, chạm lần nữa để xóa.
+
+Mỗi ô có 3 con vật xếp chồng. Màu lộ ra ở góc dưới bên trái là màu của con phía sau. Xóa con phía trước để thấy chúng.
+
+Con vật giống nhau nối theo trên, dưới, trái, phải và các lớp liền kề, không theo đường chéo. Nhóm từ 2 con có thể xóa. Mỗi loại có màu nền riêng.
+
+Con vật rơi vào chỗ trống, dồn xuống dưới và cột trống dịch sang trái. Xóa nhóm càng lớn, điểm càng cao!
+
+Tính năng miễn phí
+3 loại / 4 loại
+3 cột × 4 hàng × 3 lớp / 4 cột × 5 hàng × 3 lớp
+Thử demo · Âm thanh · ĐIỂM CAO NHẤT
+
+Mở khóa tất cả
+5 hoặc 6 loại động vật
+Bàn chơi lớn với 5 hoặc 6 cột
+Gợi ý và hoàn tác
+Mua một lần. Không phí hằng tháng.
+
+Mọi bàn chơi ban đầu đều có lời giải, nhưng một số nước đi có thể khiến con vật còn sót lại.
+
+Bản miễn phí hiển thị quảng cáo sau mỗi 3 lần thua. Mở khóa toàn bộ sẽ loại bỏ quảng cáo.</p></section></div>
+<div data-page-locale="id" lang="id" hidden=""><section class="info-card home-details"><div class="home-media"><img class="gameplay" src="/animal-pop/assets/id-gameplay.png" alt="Cocokkan hewan dalam 3 lapis" loading="lazy"></div><p class="home-prose">Cocokkan hewan dalam 3 lapis
+
+Ketuk sekali untuk memilih, lalu ketuk lagi untuk menghapus.
+
+Setiap petak berisi 3 hewan bertumpuk. Warna yang terlihat di kiri bawah adalah warna hewan di belakang. Hapus hewan depan untuk menampakkannya.
+
+Hewan yang sama terhubung ke atas, bawah, kiri, kanan, dan lapisan bersebelahan, bukan diagonal. Kelompok minimal 2 bisa dihapus. Setiap jenis memiliki warna latar sendiri.
+
+Hewan jatuh mengisi ruang kosong, bergerak ke bawah, dan kolom kosong bergeser ke kiri. Kelompok besar memberi lebih banyak poin!
+
+Fitur gratis
+3 jenis / 4 jenis
+3 kolom × 4 baris × 3 lapisan / 4 kolom × 5 baris × 3 lapisan
+Coba demo · Suara · SKOR TERBAIK
+
+Buka semua fitur
+5 atau 6 jenis hewan
+Papan besar dengan 5 atau 6 kolom
+Petunjuk dan batal langkah
+Pembelian satu kali. Tanpa biaya bulanan.
+
+Setiap papan awal punya solusi, tetapi beberapa langkah bisa menyisakan hewan.
+
+Versi gratis menampilkan iklan setelah setiap 3 kali game over. Buka semua fitur untuk menghapus iklan.</p></section></div></main><footer class="shell footer"><p data-support-text="appName">どうぶつポン！</p></footer><script id="support-page-config" type="application/json">{"slug":"animal-pop","pageType":"home","defaultLocale":"ja","locales":{"ja":{"languageName":"日本語","appName":"どうぶつポン！","top":"トップ","privacyNav":"プライバシー","language":"言語","appStore":"App Storeで見る","supportTitle":"サポート","supportIntro":"使い方とよくある質問をまとめています。","contactTitle":"お問い合わせ","detailsTitle":"ご連絡時に必要な情報","allApps":"全アプリ","contactText":"ご質問や不具合の報告は、App Storeの製品ページに表示されるデベロッパ連絡先をご利用ください。","emailAction":"メールで問い合わせる","appVersion":"アプリのバージョン","device":"ご利用の端末","osVersion":"OSのバージョン","issue":"発生した内容","steps":"再現手順","attachmentText":"可能であれば、画面のスクリーンショットも添付してください。","skipLink":"本文へ移動","navLabel":"ページ内の案内","supportNav":"サポート","heroTitle":"奥までつながるどうぶつ消去パズル","featuresTitle":"主な機能","quickTitle":"入力はすばやく","quickText":"距離・時間・消費カロリー・メモをまとめて保存できます。","photoTitle":"写真から自動入力","photoText":"ランニングマシン画面を撮ると、距離・時間・カロリーの読み取りを試します。","progressTitle":"積み上がりが見える","progressText":"カレンダー、累計距離、比較レポートで自分のペースを振り返れます。","promo":"ランニングマシンの距離・時間・カロリーを写真つきで記録。カレンダー、累計距離、比較レポートで、自分のペースの積み重ねが見えます。","detailsText":"アプリのバージョン、端末、iOSのバージョン、発生した内容をお知らせください。","privacyTitle":"プライバシーポリシー","privacyIntro":"利用者情報の取り扱い方針を説明します。","homeIntro":"奥までつながるどうぶつ消去パズル デモで遊ぼう"},"en":{"languageName":"English","appName":"Animal Pop!","top":"Home","privacyNav":"Privacy","language":"Language","appStore":"View on the App Store","supportTitle":"Support","supportIntro":"Find help and answers to common questions.","contactTitle":"Contact","detailsTitle":"What to include","allApps":"All apps","contactText":"For questions or bug reports, use the developer contact shown on the App Store product page.","emailAction":"Contact by email","appVersion":"App version","device":"Device","osVersion":"OS version","issue":"What happened","steps":"Steps to reproduce","attachmentText":"If possible, attach a screenshot of the issue.","skipLink":"Skip to content","navLabel":"Page navigation","supportNav":"Support","heroTitle":"Match animals across 3 layers","featuresTitle":"Key features","quickTitle":"Quick entry","quickText":"Save distance, duration, calories, and notes together.","photoTitle":"Enter from a photo","photoText":"Photograph the treadmill display to read distance, time, and calories.","progressTitle":"See your progress","progressText":"Review your pace with the calendar, all-time distance, and comparison reports.","promo":"Log treadmill distance, time, calories, notes, and photos. See your total distance, calendar, streaks, and clear weekly and monthly comparisons.","detailsText":"Please include the app version, device, iOS version, and what happened.","privacyTitle":"Privacy Policy","privacyIntro":"How information is handled in the app.","homeIntro":"Match animals across 3 layers Try the demo"},"zh-Hans":{"languageName":"简体中文","appName":"动物碰碰！","top":"首页","privacyNav":"隐私","language":"语言","appStore":"在 App Store 中查看","supportTitle":"支持","supportIntro":"查看使用帮助和常见问题。","contactTitle":"联系我们","detailsTitle":"联系时请提供","allApps":"所有应用","contactText":"如有问题或错误报告，请使用 App Store 产品页面中显示的开发者联系方式。","emailAction":"发送邮件","appVersion":"应用版本","device":"使用的设备","osVersion":"系统版本","issue":"发生的问题","steps":"复现步骤","attachmentText":"如方便，请附上问题截图。","skipLink":"跳转到正文","navLabel":"页面导航","supportNav":"支持","heroTitle":"连接三层动物，轻松消除","featuresTitle":"主要功能","quickTitle":"快速记录","quickText":"集中保存距离、时长、热量和备注。","photoTitle":"从照片自动输入","photoText":"拍摄跑步机显示屏，读取距离、时间和热量。","progressTitle":"查看积累","progressText":"通过日历、累计距离和对比报告回顾自己的节奏。","promo":"记录跑步机的距离、时间、热量、备注和照片。通过累计距离、日历、连续记录以及清晰的周月对比查看进步。","detailsText":"请提供App版本、设备、iOS版本和问题详情。","privacyTitle":"隐私政策","privacyIntro":"说明App如何处理用户信息。","homeIntro":"连接三层动物，轻松消除 体验演示"},"zh-Hant":{"languageName":"繁體中文","appName":"動物碰碰！","top":"首頁","privacyNav":"隱私權","language":"語言","appStore":"在 App Store 查看","supportTitle":"支援","supportIntro":"查看使用說明和常見問題。","contactTitle":"聯絡我們","detailsTitle":"聯絡時請提供","allApps":"所有App","contactText":"如有問題或錯誤回報，請使用App Store產品頁面顯示的開發者聯絡方式。","emailAction":"以電子郵件聯絡","appVersion":"App版本","device":"使用的裝置","osVersion":"系統版本","issue":"發生的問題","steps":"重現步驟","attachmentText":"如方便，請附上問題的螢幕截圖。","skipLink":"跳至正文","navLabel":"頁面導覽","supportNav":"支援","heroTitle":"連接三層動物，輕鬆消除","featuresTitle":"主要功能","quickTitle":"快速記錄","quickText":"集中儲存距離、時間、熱量和備註。","photoTitle":"從照片自動輸入","photoText":"拍攝跑步機顯示器，讀取距離、時間和熱量。","progressTitle":"查看累積","progressText":"透過日曆、累計距離和比較報告回顧自己的步調。","promo":"記錄跑步機的距離、時間、熱量、備註和照片。透過累計距離、日曆、連續紀錄以及清楚的週月比較查看進步。","detailsText":"請提供App版本、裝置、iOS版本和問題詳情。","privacyTitle":"隱私權政策","privacyIntro":"說明App如何處理使用者資訊。","homeIntro":"連接三層動物，輕鬆消除 體驗演示"},"ko":{"languageName":"한국어","appName":"동물 팡!","top":"홈","privacyNav":"개인정보","language":"언어","appStore":"App Store에서 보기","supportTitle":"지원","supportIntro":"사용 방법과 자주 묻는 질문을 확인하세요.","contactTitle":"문의","detailsTitle":"문의 시 필요한 정보","allApps":"전체 앱","contactText":"질문이나 오류 신고는 App Store 제품 페이지에 표시된 개발자 연락처를 이용해 주세요.","emailAction":"이메일로 문의","appVersion":"앱 버전","device":"사용 기기","osVersion":"OS 버전","issue":"발생한 문제","steps":"재현 단계","attachmentText":"가능하면 문제 화면의 스크린샷도 첨부해 주세요.","skipLink":"본문으로 이동","navLabel":"페이지 탐색","supportNav":"지원","heroTitle":"3층으로 이어지는 동물 퍼즐","featuresTitle":"주요 기능","quickTitle":"빠른 입력","quickText":"거리, 운동 시간, 칼로리와 메모를 함께 저장합니다.","photoTitle":"사진으로 자동 입력","photoText":"러닝머신 화면을 촬영해 거리, 시간과 칼로리를 읽습니다.","progressTitle":"쌓인 기록 확인","progressText":"캘린더, 누적 거리와 비교 리포트로 자신의 페이스를 돌아봅니다.","promo":"러닝머신 거리, 시간, 칼로리, 메모와 사진을 기록하세요. 누적 거리, 캘린더, 연속 기록과 주간·월간 비교로 변화를 확인할 수 있습니다.","detailsText":"앱 버전, 기기, iOS 버전과 발생한 내용을 알려 주세요.","privacyTitle":"개인정보 처리방침","privacyIntro":"앱의 정보 처리 방식을 설명합니다.","homeIntro":"3층으로 이어지는 동물 퍼즐 데모로 배워요"},"es-419":{"languageName":"Español","appName":"¡Animal Pop!","top":"Inicio","privacyNav":"Privacidad","language":"Idioma","appStore":"Ver en el App Store","supportTitle":"Soporte","supportIntro":"Ayuda y respuestas a preguntas frecuentes.","contactTitle":"Contacto","detailsTitle":"Información necesaria","allApps":"Todas las apps","contactText":"Para preguntas o errores, usa el contacto del desarrollador que aparece en la página del producto del App Store.","emailAction":"Contactar por correo","appVersion":"Versión de la app","device":"Dispositivo","osVersion":"Versión del sistema","issue":"Qué ocurrió","steps":"Pasos para reproducirlo","attachmentText":"Si es posible, adjunta una captura del problema.","skipLink":"Ir al contenido","navLabel":"Navegación de la página","supportNav":"Soporte","heroTitle":"Une animales en 3 capas","featuresTitle":"Funciones principales","quickTitle":"Entrada rápida","quickText":"Guarda distancia, duración, calorías y notas juntas.","photoTitle":"Entrada desde una foto","photoText":"Fotografía la pantalla de la cinta para leer distancia, tiempo y calorías.","progressTitle":"Consulta tu progreso","progressText":"Revisa tu ritmo con el calendario, la distancia total y los informes comparativos.","promo":"Registra distancia, tiempo, calorías, notas y fotos de la cinta. Consulta distancia total, calendario, rachas y comparaciones semanales y mensuales.","detailsText":"Incluye la versión de la app, el dispositivo, la versión de iOS y lo ocurrido.","privacyTitle":"Política de privacidad","privacyIntro":"Cómo gestiona la app la información.","homeIntro":"Une animales en 3 capas Prueba la demo"},"pt-BR":{"languageName":"Português (Brasil)","appName":"Animal Pop!","top":"Início","privacyNav":"Privacidade","language":"Idioma","appStore":"Ver na App Store","supportTitle":"Suporte","supportIntro":"Ajuda e respostas para dúvidas frequentes.","contactTitle":"Contato","detailsTitle":"Informações necessárias","allApps":"Todos os apps","contactText":"Para dúvidas ou erros, use o contato do desenvolvedor mostrado na página do app na App Store.","emailAction":"Entrar em contato por e-mail","appVersion":"Versão do app","device":"Dispositivo","osVersion":"Versão do sistema","issue":"O que aconteceu","steps":"Passos para reproduzir","attachmentText":"Se possível, anexe uma captura de tela do problema.","skipLink":"Ir para o conteúdo","navLabel":"Navegação da página","supportNav":"Suporte","heroTitle":"Combine animais em 3 camadas","featuresTitle":"Principais recursos","quickTitle":"Entrada rápida","quickText":"Salve distância, duração, calorias e notas juntas.","photoTitle":"Entrada por foto","photoText":"Fotografe o painel da esteira para ler distância, tempo e calorias.","progressTitle":"Veja seu progresso","progressText":"Acompanhe seu ritmo com calendário, distância total e relatórios comparativos.","promo":"Registre distância, tempo, calorias, notas e fotos da esteira. Veja a distância total, calendário, sequências e comparações semanais e mensais.","detailsText":"Inclua a versão do app, dispositivo, versão do iOS e o que aconteceu.","privacyTitle":"Política de Privacidade","privacyIntro":"Como o app trata informações.","homeIntro":"Combine animais em 3 camadas Experimente a demo"},"th":{"languageName":"ไทย","appName":"สัตว์ป๊อป!","top":"Home","privacyNav":"ความเป็นส่วนตัว","language":"ภาษา","appStore":"ดูใน App Store","supportTitle":"Support","supportIntro":"Find help and answers to common questions.","contactTitle":"Contact","detailsTitle":"What to include","allApps":"แอปทั้งหมด","contactText":"Use the button below to email questions or bug reports.","emailAction":"Contact by email","appVersion":"App version","device":"Device","osVersion":"OS version","issue":"What happened","steps":"Steps to reproduce","attachmentText":"If possible, attach a screenshot of the issue.","skipLink":"ข้ามไปยังเนื้อหา","navLabel":"เมนูหน้าเว็บ","supportNav":"ช่วยเหลือ","featuresTitle":"คุณสมบัติหลัก","heroTitle":"จับคู่สัตว์ใน 3 ชั้น","homeIntro":"จับคู่สัตว์ใน 3 ชั้น ลองเล่นสาธิต"},"vi":{"languageName":"Tiếng Việt","appName":"Động vật Pop!","top":"Home","privacyNav":"Quyền riêng tư","language":"Ngôn ngữ","appStore":"Xem trên App Store","supportTitle":"Support","supportIntro":"Find help and answers to common questions.","contactTitle":"Contact","detailsTitle":"What to include","allApps":"Tất cả ứng dụng","contactText":"Use the button below to email questions or bug reports.","emailAction":"Contact by email","appVersion":"App version","device":"Device","osVersion":"OS version","issue":"What happened","steps":"Steps to reproduce","attachmentText":"If possible, attach a screenshot of the issue.","skipLink":"Đến nội dung","navLabel":"Điều hướng trang","supportNav":"Hỗ trợ","featuresTitle":"Tính năng chính","heroTitle":"Nối động vật qua 3 lớp","homeIntro":"Nối động vật qua 3 lớp Thử demo"},"id":{"languageName":"Bahasa Indonesia","appName":"Hewan Pop!","top":"Home","privacyNav":"Privasi","language":"Bahasa","appStore":"Lihat di App Store","supportTitle":"Support","supportIntro":"Find help and answers to common questions.","contactTitle":"Contact","detailsTitle":"What to include","allApps":"Semua aplikasi","contactText":"Use the button below to email questions or bug reports.","emailAction":"Contact by email","appVersion":"App version","device":"Device","osVersion":"OS version","issue":"What happened","steps":"Steps to reproduce","attachmentText":"If possible, attach a screenshot of the issue.","skipLink":"Ke konten","navLabel":"Navigasi halaman","supportNav":"Bantuan","featuresTitle":"Fitur utama","heroTitle":"Cocokkan hewan dalam 3 lapis","homeIntro":"Cocokkan hewan dalam 3 lapis Coba demo"}}}</script>
+</body></html>
