@@ -39,6 +39,11 @@
    const value = text[element.dataset.supportText];
    if (typeof value === "string") element.textContent = value;
   });
+  document.querySelectorAll("[data-page-locale]").forEach(element => { element.hidden = element.dataset.pageLocale !== code; });
+  const inquiryNote = document.querySelector("[data-inquiry-note]");
+  if (inquiryNote) inquiryNote.textContent = code === "ja" ? "相談に不要な氏名、金額、個人情報は記載しないでください。" : ({en:"Please omit names, amounts, and personal information that are unnecessary for your inquiry.",es:"No incluyas nombres, importes ni datos personales que no sean necesarios para tu consulta.",ko:"문의에 필요하지 않은 이름, 금액, 개인정보는 적지 마세요.","zh-Hans":"请勿提供与咨询无关的姓名、金额或个人信息。","zh-Hant":"請勿提供與諮詢無關的姓名、金額或個人資訊。"})[code];
+  const privacyContact = document.querySelector("[data-privacy-contact]");
+  if (privacyContact) privacyContact.textContent = code === "ja" ? "本ポリシーに関するお問い合わせはサポートページをご利用ください。お問い合わせ内容は対応のために使用します。" : ({en:"Use the support page for questions about this policy. Information you submit is used to respond to your inquiry.",es:"Usa la página de soporte para consultar esta política. La información enviada se utiliza para responder a tu consulta.",ko:"이 정책에 관한 문의는 지원 페이지를 이용해 주세요. 보내 주신 정보는 문의 응답에 사용됩니다.","zh-Hans":"如对本政策有疑问，请使用支持页面。您提供的信息用于回复咨询。","zh-Hant":"如對本政策有疑問，請使用支援頁面。您提供的資訊用於回覆諮詢。"})[code];
   const faqList = document.querySelector("[data-support-faqs]");
   if (faqList) {
   faqList.replaceChildren();
@@ -82,3 +87,4 @@
  window.addEventListener("popstate", () => render(chooseLocale()));
  render(chooseLocale());
 })();
+

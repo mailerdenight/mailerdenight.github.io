@@ -8,3 +8,6 @@ body{margin:0}a{color:var(--primary-strong);text-underline-offset:3px}a:focus-vi
 .policy-stack{display:grid;gap:24px}.policy-card p{color:var(--muted);margin:12px 0 0;white-space:pre-line}.policy-card .button{margin-top:4px}@media(max-width:480px){.policy-stack{gap:18px}.policy-card p{font-size:14px}}
 
 .page-title h1{overflow-wrap:anywhere}
+
+
+[data-page-locale][hidden]{display:none}.policy-card h3{margin-top:20px}.policy-card .faq-item h3{margin-top:0}.policy-card ul,.policy-card ol{color:var(--muted);padding-left:1.25em}.policy-card li{margin:5px 0}.policy-card a{overflow-wrap:anywhere}.policy-card table{width:100%;border-collapse:collapse}.policy-card td,.policy-card th{padding:8px;border-bottom:1px solid var(--line)}
