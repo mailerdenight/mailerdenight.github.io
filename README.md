@@ -32,7 +32,7 @@ App Storeリンクは既存資料で具体的なURLを確認できたアプリ�
 | ことりサウンド | https://mailerdenight.github.io/kotori-sound/ |
 | のりものサウンド | https://mailerdenight.github.io/norimono-sound/ |
 | どうぶつサウンド | https://mailerdenight.github.io/doubutsu-sound/ |
-| 鳥よけサウンド | https://mailerdenight.github.io/bird-deterrent-sounds/ |
+| 鳥・ねずみ除けサウンド | https://mailerdenight.github.io/bird-deterrent-sounds/ |
 | Sound Effects（Pico Buttons） | https://mailerdenight.github.io/sound-effects/ |
 | どうぶつポン！ | https://mailerdenight.github.io/animal-pop/ |
 | 自動車免許クイズ 2026 | https://mailerdenight.github.io/driving-quiz/ |
