@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-12",
+  "source_commit": "eac65a4955cb68c7c5e4b39fb157aa3139b63dd5",
+  "issues": [
+    {
+      "file": "parent-child-repayment/support/index.html",
+      "locale": "en",
+      "kind": "empty-body",
+      "reason": "Existing English support body is empty. Translation repair is a separate selected task; this PR does not change translations. Remove this entry after that repair lands."
+    }
+  ]
+}
